@@ -16,18 +16,16 @@
 		아래 항목을 수정하고 "수정" 버튼을 클릭하세요
 	</p>
 	
-	<form action="/phonebook3/phone" method="get">
-		이름(name): <input type="text" name="name" value="${uList.name} "><br>
-		핸드폰(hp): <input type="text" name="hp" value="${uList.hp }"><br>
-		회사(company): <input type="text" name="company" value="${uList.company }"><br>
-		
-		<input type="hidden" name="update" value="${uList.id }"><br>
-		 <input type="hidden" name="" value="update"><br>
-		<button type="submit">수정</button>
+	<form action="/phonebook3/phone/modify" method="get">
+		이름(name): <input type="text" name="name" value="${personVo.name }"><br>
+		핸드폰(hp): <input type="text" name="hp" value="${personVo.hp }"><br>
+		회사(company): <input type="text" name="company" value="${personVo.company }"><br>
+		<button type="submit">수정</button><br>
+		<input type="hidden" name="person_id" value="${personVo.person_id }"><br>
 	</form>
 	
 	<br>
-	<a href="/phonebook3/phone">리스트 바로 가기</a>
+	<a href="/phonebook3/phone/list">리스트 바로 가기</a>
 	
 </body>
 </html>

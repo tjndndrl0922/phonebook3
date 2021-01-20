@@ -3,8 +3,8 @@ package com.javaex.vo;
 public class PersonVo {
 
 	// 필드
-	public int person_id;
-	public String name, hp, company;
+	private int person_id;
+	private String name, hp, company;
 
 	// 생성자
 	public PersonVo() {

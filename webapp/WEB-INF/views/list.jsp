@@ -32,8 +32,8 @@
 					<td>${personVo.company }</td>
 				</tr>
 				<tr>
-					<td><a href="/phonebook3/phone/modifyForm">[수정]</a></td>
-					<td><a href="/phonebook3/phone/delete">[삭제]</a></td>
+					<td><a href="/phonebook3/phone/modifyForm?id=${personVo.person_id }">[수정]</a></td>
+					<td><a href="/phonebook3/phone/delete/${personVo.person_id }">[삭제]</a></td>
 				</tr>
 			</table>
 		</c:forEach>
